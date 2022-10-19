@@ -3,35 +3,35 @@ import java.io.*;
 import java.util.Scanner;
 class Add
 {
-	private int a,b,c;
-	void getdata(int x,int y)
+	private int i,j,k;
+	void getdata(int a,int b)
 	{
-		a=x;
-		b=y;
+		i=a;
+		j=b;
 	}
 	void addition()
 	{
-		c=a+b;
+		k=i+j;
 	}
 	void print()
 	{
-		System.out.println("Addition of 2 numbers is: "+c);
+		System.out.println("Addition of 2 numbers is: "+k);
 	}
 }
 class add2nos
 {
 	public static void main(String args [])
 	{
-		int m,n,sum;
+		int x,y,sum;
 		try
 		{
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Enter first number");
-			m=sc.nextInt();
+			x=sc.nextInt();
 			System.out.println("Enter second number");
-			n=sc.nextInt();
+			y=sc.nextInt();
 			Add p = new Add();
-			p.getdata(m,n);
+			p.getdata(x,y);
 			p.addition();
 			p.print();
 		}
