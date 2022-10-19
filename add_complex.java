@@ -15,9 +15,11 @@ class complex{
 		temp.imag = A.imag + B.imag;
 		return temp;
 	}
+	//print the sum of complex numbers 
+	
 	void show()
 	{
-		System.out.println(real+ "+j" +imag);
+		System.out.println(real+ "+i" +imag);
 	}
 }
 class add_complex{
