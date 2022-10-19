@@ -1,3 +1,4 @@
+//add 2 complex nos
 class complex{
 	double real;
 	double imag;
@@ -21,8 +22,8 @@ class complex{
 }
 class add_complex{
 	public static void main(String args[]){
-		complex c1 = new complex(2.0, 5.0);
-		complex c2 = new complex(3.0, 5.0);
+		complex c1 = new complex(3.0, 5.0);
+		complex c2 = new complex(3.0, 8.0);
 		complex c3 = c1.sum(c1, c2);
 		System.out.println("\n\n c1 = ");
 		c1.show();
