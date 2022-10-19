@@ -9,7 +9,7 @@ class Commercial
 	{
 		return name;
 	}
-	void CalculateBill(int unit)
+	void CalculateBill(int unit) //calculating commercial bill
 	{
 		System.out.println("Commercial Customer= "+getname());
 		System.out.println("Bill amount= "+unit*5.00);
@@ -17,7 +17,7 @@ class Commercial
 }
 class Domestic extends Commercial
 {
-	void CalculateBill(int unit)
+	void CalculateBill(int unit) //calculating domestic bill
 	{
 		System.out.println("Domestic Customer= "+getname());
 		System.out.println("Bill amount= "+unit*2.50);
@@ -28,10 +28,10 @@ class Labq5
 	public static void main(String args[])
 	{
 		Commercial c = new Commercial();
-		c.setname("Ayanika Majumdar");
-		c.CalculateBill(60);
+		c.setname("ABC");
+		c.CalculateBill(40);
 		Domestic d = new Domestic ();
-		d.setname("Ankita Das");
-		d.CalculateBill(60);
+		d.setname("EFG");
+		d.CalculateBill(40);
 	}
 }
