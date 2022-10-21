@@ -1,26 +1,26 @@
-class A
+class C
 {
 	int num;
 	void show()
 	{
-		System.out.println("Hello from show from A num= "+num);
+		System.out.println("Hello from show from C num= "+num);
 	}
 }
-class B extends A
+class D extends C
 {
-	int num=50;
+	int num=70;
 	void show()
 	{
-		super.num=120;
+		super.num=150;
 		super.show();
-		System.out.println("Hello from show from B= "+num);
+		System.out.println("Hello from show from D= "+num);
 	}
 }
 class Labq4
 {
 	public static void main(String args[])
 	{
-		B obj = new B();
+		D obj = new D();
 		obj.show();
 	}
 }
